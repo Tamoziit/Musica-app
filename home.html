@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica-One stop music reviews site.</title>
+    <link rel="icon"
+        href="https://p1.hiclipart.com/preview/252/835/702/apple-music-logo-itunes-music-download-itunes-store-symbol-material-property-circle-computer-icon-png-clipart.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="likesContainer">
+
+        <div class="likes">
+            <div class="likesHeader">
+                <h2>Your Playlist&nbsp;<i class="fa-solid fa-music"></i></h2>
+            </div>
+            <div id="likesList">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popularContainer">
+        <div class="popularHeader">
+            <img
+                src="https://p1.hiclipart.com/preview/252/835/702/apple-music-logo-itunes-music-download-itunes-store-symbol-material-property-circle-computer-icon-png-clipart.jpg">
+            <div class="Text">
+                <h1>Musica</h1>
+                <h3 id="banner">One stop for Music Reviews and Top Songs</h3>
+                <h3 class="banner">Build your own personalized playlist</h3>
+                <h3 class="banner">View latest & trending tracks</h3>
+                <h3 class="banner">Write your track reviews</h3>
+            </div>
+        </div>
+
+        <div class="topArtist">
+            <img src="assets/arijitblur.png">
+        </div>
+    </div>
+
+    <div class="mostPopular">
+        <h1>Most Played&nbsp;<i class="fa-solid fa-fire"></i></h1>
+
+        <div class="top4">
+            
+        </div>
+
+        <h1 class="othersHead">You may also Like</h1>
+
+        <div class="search">
+            <input id="search" type="text" placeholder="Search your fav songs..."><button id="searchBTN"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="othersList" id="othersList">
+
+        </div>
+    </div>
+
+    <div class="audioContainer">
+       <img src="assets/satranga.jpg" alt="satranga" class="audioImg">
+        <div id="Details">
+            <text id="T1">Satranga</text>
+            <text id="T2">Arijit Singh</text>
+        </div>
+
+        <div class="playbar">
+            <button id="songPause" class="player">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="volume">
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="range">
+                <input type="range" name="volume" id="volume">
+            </div>
+        </div>
+        
+        <div class="audioPlayer">
+            
+        </div>
+    </div>
+
+    <div class="commentModal">
+        <button class="close" id="close"><i class="fa-solid fa-xmark"></i></button>
+        <input type="text" class="name" placeholder="Name..." id="header">
+        <textarea class="comment" cols="30" rows="10" id="notes"></textarea>
+        <button class="submit" type="submit" id="submit">Submit Review</button>
+    </div>
+
+    <div class="notesModal">
+        <button class="close" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="header">Your Practice Notes&nbsp;<i class="fa-solid fa-note-sticky"></i></h2>
+        <div class="notesList"></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/82811554f3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

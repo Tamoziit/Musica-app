@@ -1,0 +1,930 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background: #4f6202;
+     height: 100vh;
+     width: 100%;
+ }
+
+ .likesContainer {
+     display: flex;
+     flex-direction: column;
+     width: 260px;
+     height: 100vh;
+     background: rgba(21, 92, 42, 0.56);
+     left: 0;
+     top: 0;
+     padding: 10px;
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3),
+         1em 0.3em 1.5em rgba(15, 28, 18, 0.6);
+     position: fixed;
+     overflow-y: auto;
+ }
+
+ .likesContainer .likes .likesHeader {
+     margin-bottom: 10px;
+     font-family: 'Rubik', sans-serif;
+     font-weight: 500;
+     z-index: 1;
+     position: absolute;
+     color: whitesmoke;
+ }
+
+ .likesContainer .likes #likesList {
+     display: flex;
+     flex-direction: column;
+     top: 60px;
+     position: absolute;
+ }
+
+ .likesContainer .likes #likesList:last-child {
+     padding-bottom: 10px;
+ }
+
+ .likesContainer .likes #likesList .playList {
+     display: flex;
+     flex-direction: row;
+     padding-bottom: 10px;
+     align-items: center;
+     justify-content: space-between;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ .likesContainer .likes #likesList .playList .likeDetails {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+
+ .likesContainer .likes #likesList .playList .likeDetails img {
+     height: 60px;
+     width: 60px;
+     border-radius: 6px;
+ }
+
+ .likesContainer .likes #likesList .playList .likeDetails .Details {
+     padding-left: 4px;
+     padding-top: 4px;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ .likesContainer .likes #likesList .playList .likeDetails .Details .T1 {
+     font-size: 1em;
+     color: whitesmoke;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: 155px;
+ }
+
+ .likesContainer .likes #likesList .playList .likeDetails .Details .T2 {
+     font-size: 0.8em;
+     color: gray;
+     font-weight: 600;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: 155px;
+ }
+
+ .likesContainer .likes #likesList .playList .icon {
+     font-size: 1em;
+     color: white;
+     padding-right: 3px;
+     position: absolute;
+     z-index: 1;
+     left: 235px;
+ }
+
+ .likesContainer .likes #likesList .playList .icon .playlistLikes {
+     cursor: pointer;
+     background: transparent;
+     border: none;
+     outline: none;
+ }
+
+ .likesContainer .likes #likesList .playList .icon .playlistLikes i {
+     color: white;
+     font-size: 1em;
+     cursor: pointer;
+ }
+
+ .popularContainer {
+     display: flex;
+     top: 0;
+     left: 350px;
+     position: absolute;
+ }
+
+ .popularContainer .popularHeader {
+     display: flex;
+     padding-top: 120px;
+     padding-right: 120px;
+     padding-left: 50px;
+ }
+
+ .popularContainer .popularHeader img {
+     height: 100px;
+     width: 100px;
+     background: transparent;
+     border-radius: 50%;
+ }
+
+ .popularContainer .popularHeader .Text {
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 5px;
+     transform: translateY(-24px);
+ }
+
+ .popularContainer .popularHeader .Text h1 {
+     font-family: 'Single Day';
+     color: whitesmoke;
+     padding-left: 25px;
+     padding-bottom: 6px;
+     font-size: 5em;
+ }
+
+ .popularContainer .popularHeader .Text h3 {
+     font-family: 'Single Day';
+     width: 78vh;
+     color: whitesmoke;
+     padding-left: 25px;
+     padding-bottom: 6px;
+     font-size: 2em;
+     position: absolute;
+     top: 80px;
+     opacity: 0;
+     transition: opacity 1s ease-out;
+ }
+
+ popularContainer .popularHeader .Text h3:first-child {
+     opacity: 1;
+ }
+
+ .popularContainer .topArtist {
+     outline: none;
+     margin: none;
+     border: none;
+     right: 0;
+ }
+
+ .popularContainer .topArtist img {
+     height: 400px;
+     width: 600px;
+     -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0.1));
+     mask-image: linear-gradient(#000, rgba(0, 0, 0, 0.1));
+     box-shadow: 1em 0.3em 1.5em rgba(15, 28, 18, 0.6);
+     border: none;
+     outline: none;
+ }
+
+ .mostPopular h1 {
+     left: 350px;
+     top: 330px;
+     padding-bottom: 40px;
+     font-family: 'Rubik', sans-serif;
+     font-size: 2.2em;
+     display: flex;
+     position: absolute;
+     color: whitesmoke;
+ }
+
+ .mostPopular .top4 {
+     display: flex;
+     flex-direction: row;
+     position: absolute;
+     left: 350px;
+     top: 390px;
+ }
+
+ .mostPopular .top4 .topContainer {
+     display: flex;
+     flex-direction: column;
+     height: 250px;
+     width: 230px;
+     background: rgba(21, 92, 42, 0.56);
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3),
+         1em 0.3em 1.5em rgba(15, 28, 18, 0.6);
+     border-radius: 10px;
+     padding: 15px;
+     align-items: center;
+     margin-right: 20px;
+     font-family: 'Rubik', sans-serif;
+     transition: .1s ease;
+ }
+
+ .mostPopular .top4 .topContainer:hover {
+     height: 280px;
+     width: 260px;
+     border: 2.4px solid whitesmoke;
+     transform: translateY(-15px);
+ }
+
+
+ .mostPopular .top4 .topContainer img {
+     height: 220px;
+     width: 220px;
+     padding-bottom: 3px;
+     overflow: hidden;
+ }
+
+ .mostPopular .top4 .topContainer .Details {
+     display: flex;
+     flex-direction: column;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ .mostPopular .top4 .topContainer .Details .T1 {
+     font-size: 1.2em;
+     color: whitesmoke;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: 220px;
+ }
+
+ .mostPopular .top4 .topContainer .Details .T2 {
+     font-size: 1em;
+     color: gray;
+     font-weight: 600;
+     padding-bottom: 5px;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: 220px;
+ }
+
+ .mostPopular .top4 .topContainer .action .searchLikes {
+    font-size: 1.2em;
+    color: whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.mostPopular .top4 .topContainer .action .searchLikes i {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.mostPopular .top4 .topContainer .action .searchComments {
+    font-size: 1.2em;
+    color: whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.mostPopular .top4 .topContainer .action .searchComments i {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.mostPopular .top4 .topContainer .action .viewNotes {
+    font-size: 1.2em;
+    color: whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.mostPopular .top4 .topContainer .action .viewNotes i {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+ .mostPopular .othersHead {
+     top: 750px;
+ }
+
+ .mostPopular .search {
+     background: rgba(15, 28, 18, 0.6);
+     height: 45px;
+     width: 60vh;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 28px;
+     z-index: 1;
+     position: absolute;
+     left: 350px;
+     top: 810px;
+     margin-bottom: 20px;
+ }
+
+ .mostPopular .search input {
+     padding: 15px;
+     width: 100%;
+     background: transparent;
+     margin: none;
+     border: none;
+     outline: none;
+     color: whitesmoke;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ .mostPopular .search button {
+     padding: 12px;
+     background: transparent;
+     outline: none;
+     border: none;
+ }
+
+ .mostPopular .search button i {
+     font-size: 1.4em;
+     color: white;
+     cursor: pointer;
+ }
+
+ .mostPopular #othersList {
+     display: flex;
+     position: absolute;
+     flex-direction: column;
+     top: 860px;
+     left: 350px;
+ }
+
+ .mostPopular #othersList .othersContainer {
+     display: flex;
+     flex-direction: row;
+     height: 80px;
+     width: 150vh;
+     align-items: center;
+     justify-content: space-between;
+     padding: 5px;
+     border-bottom: 1px solid gray;
+ }
+
+ .mostPopular #othersList .othersContainer:last-child {
+     margin-bottom: 60px;
+ }
+
+ .mostPopular #othersList .othersContainer:hover {
+     background: rgba(14, 85, 35, 0.896);
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3);
+ }
+
+ .mostPopular #othersList .othersContainer #DetailsContainer {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .mostPopular #othersList .othersContainer #DetailsContainer img {
+     height: 60px;
+     width: 60px;
+     border-radius: 5px;
+     overflow: hidden;
+     margin-right: 9px;
+     margin-left: 9px;
+ }
+
+ .mostPopular #othersList .othersContainer #DetailsContainer #Details {
+     padding-left: 4px;
+     padding-top: 10px;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ .mostPopular #othersList .othersContainer #DetailsContainer #Details #T1 {
+     font-size: 1em;
+     color: whitesmoke;
+ }
+
+ .mostPopular #othersList .othersContainer #DetailsContainer #Details #T2 {
+     font-size: 0.8em;
+     color: gray;
+     font-weight: 600;
+ }
+
+ .mostPopular #othersList .othersContainer .action .searchLikes {
+     font-size: 1.6em;
+     color: whitesmoke;
+     cursor: pointer;
+     background: transparent;
+     outline: none;
+     border: none;
+ }
+
+ .mostPopular #othersList .othersContainer .action .searchLikes i {
+     margin-right: 25px;
+     margin-left: 25px;
+ }
+
+ .mostPopular #othersList .othersContainer .action .searchComments {
+     font-size: 1.6em;
+     color: whitesmoke;
+     cursor: pointer;
+     background: transparent;
+     outline: none;
+     border: none;
+ }
+
+ .mostPopular #othersList .othersContainer .action .searchComments i {
+     margin-right: 25px;
+     margin-left: 25px;
+ }
+
+ .mostPopular #othersList .othersContainer .action .viewNotes {
+     font-size: 1.6em;
+     color: whitesmoke;
+     cursor: pointer;
+     background: transparent;
+     outline: none;
+     border: none;
+ }
+
+ .mostPopular #othersList .othersContainer .action .viewNotes i {
+     margin-right: 25px;
+     margin-left: 25px;
+ }
+
+ .commentModal {
+     height: 300px;
+     width: 350px;
+     border: 2px white solid;
+     position: absolute;
+     top: 50%;
+     left: -50%;
+     transform: translate(-50%, -50%);
+     z-index: 1;
+     background: rgb(4, 136, 44);
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3),
+         1em 0.3em 1.5em rgba(15, 28, 18, 0.6);
+     border-radius: 10px;
+     padding: 15px;
+     align-items: center;
+     transition: 1s ease;
+ }
+
+ .showCommentModal {
+     left: 50%;
+ }
+
+ .commentModal .close {
+     top: 0;
+     position: absolute;
+     right: 0;
+     height: 25px;
+     width: 28px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     align-items: center;
+     line-height: 10px;
+     font-size: 1.2em;
+     font-weight: 600;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     color: whitesmoke;
+     background: transparent;
+ }
+
+ .commentModal .close:hover {
+     background: rgba(15, 69, 31, 0.7);
+     height: 28px;
+     width: 30px;
+ }
+
+ .commentModal .name {
+     width: 90%;
+     height: 40px;
+     background: rgba(15, 69, 31, 0.56);
+     backdrop-filter: blur;
+     border: none;
+     outline: none;
+     border-radius: 20px;
+     padding-left: 10px;
+     padding-right: 10px;
+     color: whitesmoke;
+     margin-top: 30px;
+     margin-left: 8px;
+     margin-bottom: 10px;
+ }
+
+ .commentModal .comment {
+     width: 90%;
+     height: 100px;
+     background: rgba(15, 69, 31, 0.56);
+     backdrop-filter: blur;
+     border: none;
+     outline: none;
+     border-radius: 10px;
+     padding: 10px;
+     color: whitesmoke;
+     margin-top: 30px;
+     margin-left: 8px;
+     margin-bottom: 30px;
+ }
+
+ .commentModal .submit {
+     width: 45%;
+     height: 40px;
+     background: rgba(15, 69, 31, 0.814);
+     backdrop-filter: blur;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     border-radius: 20px;
+     color: whitesmoke;
+     font-family: 'Rubik', sans-serif;
+     font-weight: 600;
+     font-size: 1em;
+     padding: 8px;
+     transition: .1s ease;
+     left: 50%;
+     position: absolute;
+     bottom: 0;
+     transform: translate(-50%, -50%);
+ }
+
+ .commentModal .submit:hover {
+     border: 2.5px solid whitesmoke;
+     width: 50%;
+     height: 45px;
+     font-size: 1.1em;
+ }
+
+ .notesModal {
+     height: 450px;
+     width: 400px;
+     border: 2px white solid;
+     position: absolute;
+     top: 50%;
+     left: -50%;
+     transform: translate(-50%, -50%);
+     z-index: 1;
+     background: rgb(4, 136, 44);
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3),
+         1em 0.3em 1.5em rgba(15, 28, 18, 0.6);
+     border-radius: 5px;
+     padding: 15px;
+     align-items: center;
+     transition: 1s ease;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     overflow: auto;
+ }
+
+ .showNotesModal {
+     left: 50%;
+ }
+
+ .notesModal .header {
+     color: whitesmoke;
+     font-size: 1.4em;
+     font-family: 'Rubik', sans-serif;
+     margin-bottom: 10px;
+ }
+
+ .notesModal .notesList {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .notesModal .notesList .notesContainer {
+     display: flex;
+     flex-direction: column;
+     color: whitesmoke;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ .notesModal .notesList .notesContainer h4 {
+     margin-bottom: 5px;
+ }
+
+ .notesModal .notesList .notesContainer .text {
+     background: rgba(25, 76, 41, 0.559);
+     backdrop-filter: blur;
+     border: none;
+     outline: none;
+     padding: 10px;
+     border-radius: 6px;
+     margin-bottom: 10px;
+ }
+
+ .notesModal .close {
+     top: 0;
+     position: absolute;
+     right: 0;
+     height: 25px;
+     width: 28px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     align-items: center;
+     line-height: 10px;
+     font-size: 1.2em;
+     font-weight: 600;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     color: whitesmoke;
+     background: transparent;
+ }
+
+ .notesModal .close:hover {
+     background: rgba(15, 69, 31, 0.7);
+     height: 28px;
+     width: 30px;
+ }
+
+ .audioContainer {
+     position: fixed;
+     z-index: 9;
+     height: 9vh;
+     width: 100%;
+     background: rgb(11, 90, 34);
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3),
+         1em 0.3em 1.5em rgba(15, 28, 18, 0.6);
+     display: flex;
+     align-items: center;
+     bottom: 0;
+     left: 281px;
+     border-radius: 3px;
+ }
+
+ .audioContainer .audioImg {
+     height: 50px;
+     width: 50px;
+     border-radius: 5px;
+     padding-left: 20px;
+     padding-right: 10px;
+ }
+
+ .audioContainer #Details {
+     display: flex;
+     flex-direction: column;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ .audioContainer #Details #T1 {
+     font-size: 1em;
+     color: whitesmoke;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: 220px;
+ }
+
+ .audioContainer #Details #T2 {
+     font-size: 0.8em;
+     color: gray;
+     font-weight: 600;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: 180px;
+ }
+
+ .audioContainer .playbar {
+     margin-left: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 120vh;
+     height: 65%;
+ }
+
+ .audioContainer .playbar button {
+     border: 1px solid gray;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 7px;
+     background: transparent;
+     cursor: pointer;
+     width: 40px;
+     height: 50px;
+ }
+
+ .audioContainer .playbar button:hover {
+     background: rgba(9, 57, 23, 0.959);
+ }
+
+ .audioContainer .playbar button i {
+     font-size: 1.2em;
+     color: whitesmoke;
+ }
+
+ .audioContainer .playbar .seekbar {
+    width: 90%;
+    height: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ .audioContainer .playbar .seekbar .circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 5.8px;
+    left: 0%;
+    transition: left 0.5s;
+ }
+
+ .audioContainer .audioPlayer {
+    opacity: 0;
+    height: 2px;
+    width: 2px;
+    margin: none;
+    padding: none;
+ }
+
+ .audioContainer .volume {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 360px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .audioContainer .volume i {
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin-right: 8px;
+ }
+ 
+ .audioContainer .volume .range input {
+    height: 5px;
+    color: rgba(15, 69, 31, 0.56);
+    cursor: pointer;
+ }
+
+
+ 
+
+ /*Scrollbar styling*/
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+
+ ::-webkit-scrollbar-track {
+     background: #142322;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: #1a3d2d;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+     background: #505151;
+ }
+
+
+
+
+ @media screen and (max-width: 768px) {
+    /* Apply styles for screens up to 768px wide */
+    .likesContainer {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 10px;
+      box-shadow: none;
+    }
+  
+    .likesContainer .likes .likesHeader {
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+  
+    .popularContainer {
+      display: block;
+      left: 0;
+      top: 0;
+      position: relative;
+    }
+  
+    .popularContainer .popularHeader {
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  
+    .popularContainer .popularHeader img {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .popularContainer .popularHeader .Text {
+      padding-left: 0;
+      padding-bottom: 10px;
+    }
+  
+    .popularContainer .popularHeader .Text h1 {
+      font-size: 2em;
+    }
+  
+    .popularContainer .popularHeader .Text h3 {
+      font-size: 1.2em;
+      width: auto;
+    }
+  
+    .mostPopular {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  
+    .mostPopular h1 {
+      font-size: 1.5em;
+      padding-bottom: 20px;
+    }
+  
+    .mostPopular .top4 {
+      flex-wrap: wrap;
+      top: 0;
+    }
+  
+    .mostPopular .top4 .topContainer {
+      width: 48%;
+      margin-right: 2%;
+      margin-bottom: 20px;
+    }
+  
+    .mostPopular .top4 .topContainer:nth-child(2n) {
+      margin-right: 0;
+    }
+  
+    .mostPopular .othersHead {
+      top: 0;
+    }
+  
+    .mostPopular .search {
+      top: 30px;
+      left: 50px;
+      width: auto;
+    }
+  
+    .mostPopular .search input {
+      width: 70%;
+    }
+  
+    .mostPopular #othersList {
+      top: 100px;
+      left: 50px;
+      width: auto;
+    }
+  
+    .mostPopular #othersList .othersContainer {
+      flex-wrap: wrap;
+    }
+  
+    .mostPopular #othersList .othersContainer:nth-child(2n) {
+      margin-right: 0;
+    }
+  
+    .mostPopular #othersList .othersContainer #DetailsContainer {
+      flex-wrap: wrap;
+    }
+  
+    .mostPopular #othersList .othersContainer #DetailsContainer img {
+      width: 40%;
+      margin-right: 2%;
+    }
+  
+    .mostPopular #othersList .othersContainer #DetailsContainer #Details {
+      width: 56%;
+    }
+  
+    .mostPopular #othersList .othersContainer .action {
+      width: 40%;
+    }
+  
+    .commentModal {
+      width: 90%;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      box-shadow: none;
+    }
+}
