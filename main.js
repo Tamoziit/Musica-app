@@ -58,7 +58,7 @@ async function recommendations() {
 				.then((res) => res.json())
 				.then((data) => {
 					const artists = data.results;
-					console.log(artists);
+					
 					return artists.forEach((result) => {
 						const othersContainer = document.createElement('div');
 						othersContainer.classList.add("othersContainer");
@@ -157,7 +157,7 @@ async function recommendations() {
 			.then((res) => res.json())
 			.then((data) => {
 				const artists = data.results;
-				console.log(artists);
+	
 				return artists.forEach((result) => {
 					const othersContainer = document.createElement('div');
 					othersContainer.classList.add("othersContainer");
@@ -254,7 +254,6 @@ async function recommendations() {
 const searchSong = () => {
 	othersList.innerHTML = ``;
 	let term = search.value;
-	console.log(term);
 	if (!term || term === '') {
 		alert("Please enter song to be searched");
 	}
