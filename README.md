@@ -1,43 +1,39 @@
-![MasterHead](https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/08/instagram-freepik-1693399302.jpg)
+![MasterHead](musica.png)
 
-<h1 align="center">InstaForNoobs</h1>
-<h3 align="center"> A web application which works along the footsteps of the well known social media site - Instagram.</h3>
+<h1 align="center">Musica - Music App</h1>
+<h3 align="center"> A small scale one stop website to stream new songs, write reviews about the songs and practice the songs by keeping personalized music notes</h3>
 
 
 # Features
 
-- Feed Posts.
-- User Suggestions.
-  <img align="right" alt="homepage" width="460" src="Screenshot 2024-02-07 174330.png">
-- User Profile
-- Likes, Comments, Follow/Unfollow.
-- Post Creation.
-- Search for User.
-- Authentication.
-- Responsiveness.
+- Search Songs.
+- Listen to new Songs.
+  <img align="right" alt="homepage" width="460" src="Screenshot 2024-02-23 225455.png">
+- Make a personalized playlist.
+- Write reviews about a song.
+- Store personalized music notes.
+- View old notes of a song.
+- Likes Songs.
 
 
 
 
 # Concepts Learned
 
-<img align="right" alt="profilepage" width="460" src="Screenshot 2024-02-07 174436.png">
+<img align="right" alt="profilepage" width="460" src="Screenshot 2024-02-23 225318.png">
 
-- Developing interactive & responsive UI design using React.
-- Using UI/UX framework "Chakra UI".
-- Handling Backend as a Service platform - Firebase.
-- Handling Firebase Authentication, Firebase Database, Storage and setting up Firebase security rules.
-- Developing custom Hooks to carry out different functionalities like following, searching, creating posts etc. within the website.
+- Developing interactive UI design using HTML5, CSS3 and Vanilla JavaScript.
+- Handling "iTunes Search" API and calling different endpoints of the API.
+- Handling Local Storage operations to store User playlist, reviews, likes and notes.
+- Building a functional music player from scratch.
 - Version Control using GitHub.
-- Deploying the website using Vercel.
+- Deploying the website using Netlify.
 
 # Tech Stack
 
-<p align="center"> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
+<p align="center"> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
 
-# Mobile View
 
-<p align="center"><img alt="MV1" width="250" src="Screenshot 2024-02-07 174619.png"> <img alt="MV2" width="250" src="Screenshot 2024-02-07 174725.png"></p>
 
 <h4 align="left">Check it out here! &#128526;</h4>
-[Instafornoobs] (https://insta-for-noobs.vercel.app/)
+[Musica-Music App] (https://musica-music-app-reviews-practice.netlify.app/)
