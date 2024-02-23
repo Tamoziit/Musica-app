@@ -7,9 +7,9 @@
 # Features
 
 - Search Songs.
-- Listen to new Songs.
   <img align="right" alt="homepage" width="460" src="Screenshot 2024-02-23 225455.png">
 - Make a personalized playlist.
+- Listen to new Songs.
 - Write reviews about a song.
 - Store personalized music notes.
 - View old notes of a song.
